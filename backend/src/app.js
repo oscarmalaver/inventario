@@ -1,10 +1,10 @@
 import express from "express";
-import caregoriaRoutes from "./routes/categorias.routes.js"
+import categoriaRoutes from "./routes/categorias.routes.js"
 
 const app = express();
 
-app.set("port",5000);
+app.set("port",5000)
 
-app.use(caregoriaRoutes)
+app.use("/api/categorias",categoriaRoutes)
 
 export default app;

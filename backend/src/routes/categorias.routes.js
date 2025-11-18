@@ -3,6 +3,6 @@ import { methodHTTP as categoriaController} from "../controllers/categoria.contr
 
 const router = Router();
 
-router.get("/api/categorias",categoriaController.getCategorias)
+router.get("/",categoriaController.getCategorias)
 
 export default router;
